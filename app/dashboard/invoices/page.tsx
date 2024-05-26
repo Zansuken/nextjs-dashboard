@@ -7,6 +7,11 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { NextPage } from 'next';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 interface IPageProps {
   params: { your_dynamic_prop_here: string };
